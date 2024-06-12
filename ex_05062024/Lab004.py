@@ -1,3 +1,4 @@
+#Taking the input from the console
 name=input("Enter your name: ")
 lastname=input("Enter your last name: ")
 print(name)
