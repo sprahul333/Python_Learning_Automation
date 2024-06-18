@@ -67,5 +67,20 @@ if name == "John":
 else:
     print("You are not John")
 
+print("************************************************************************************")
+
+#Not operator
+
+a=10
+b=20
+
+if not a==b:
+    print("a is not equal to b")
+    if a>b:
+        print("a is greater than b")
+        if a>=b:
+            print("a is greater than or equal to b")
 
 
+print("************************************************************************************")
+print("End of the Program")

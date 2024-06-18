@@ -5,6 +5,10 @@
 # 3. Update a item
 # 4. View Item
 # 5. Exit
+
+#Values can be retrieved by location. It is a ordered sequence where it can be indexed or sliced.
+from inspect import currentframe, getframeinfo
+
 list1 = [1, 2, 3]
 
 print(list1)
@@ -19,7 +23,9 @@ print(list1[-1])
 
 #Add a value to the list
 list1.append(4)
-list1.insert(2,10) #Inserting 10 at 2nd Index position
+
+#Inserting 10 at 2nd Index position
+list1.insert(2,10)
 
 print(list1)
 
@@ -36,6 +42,10 @@ print(list1)
 print(type(list1))
 
 print(list1[1:3])
+
+#Prints the list starting from 1st index position till the end
+f = currentframe()
+print(getframeinfo(f).lineno, list1[1:])
 
 #Adding Another List
 #Same Like addAll function in JAVA
@@ -57,7 +67,14 @@ list1.reverse()
 print(list1)
 
 #Sorting the data in ascending order
-list1.sort()
+#Does work when the list has same data type of values
+
+#Using try and except concept to handle the errors
+try:
+    list1.sort()
+except TypeError:
+    print("Unable to sort the list")
+
 
 print(list1)
 
@@ -65,3 +82,34 @@ print(list1)
 list1[2]=100
 
 print(list1)
+
+popped_item=list1.pop();
+print(popped_item)
+
+print(list1)
+
+#Removes the value that is present at second index position
+popped_item=list1.pop(2);
+print(popped_item)
+
+print(list1)
+
+
+#List Comprehension
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+first_col = [row[0] for row in matrix]
+print(first_col)
+
+characters=['a','g','r','w','i']
+
+#Prints none as it does not return anything
+print(characters.sort())
+
+sorted_characters=sorted(characters)
+
+print(sorted_characters)
+
+#Add same values to the list:
+
+list2=[1]*10
+print(list2)

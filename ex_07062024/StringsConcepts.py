@@ -41,9 +41,31 @@ print(name[2])
 #Slicing of the String
 print(name[0:2]) #Prints the characters from 0 to 2
 
+print(name)
+print(name[0:3:2] +" -- Prints the characters from 0 to 3 in the step count of 2") #Prints the characters from 0 to 3 with a step size of 2
+
+#Prints the string in reverse order
+print(name[::-1])
+
 #Prints the character that is present at the last index position
 #When we put negative values, it will read the string in reverse order
 print(name[-1])
+
+#Prints the String starting from 3rd index position to 0 in reverse order
+print(name[3::-1])
+
+#Prints the string starting from 2nd index position till the end
+print(name[2::])
+
+#Prints the string starting from 2nd index position till the end ---> Alternate functions
+print(name[2:])
+
+#Prints the string starting from 0th index position till the 5th index position
+print(name[:5])
+
+#Prints the string in the step count of 3
+#Prints every 3rd character
+print(name[::3])
 
 #None Means nothing
 #None means not a empty value or zero or 0.0 or anything nor a default value
@@ -61,3 +83,20 @@ name=""
 print(name)
 
 #Null values are not present in Python
+
+#Concatenation operator:
+name="Rahul "
+lastname="Paluvai"
+
+print(name+lastname)
+
+finalName=name+lastname
+
+#Repeating the same string again and again
+print(name*10)
+
+#Toggles the letters
+print(name.swapcase())
+
+#Splits the string based on the white spaces
+print(finalName.split(" "))

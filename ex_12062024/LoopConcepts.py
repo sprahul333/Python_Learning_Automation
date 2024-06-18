@@ -45,5 +45,49 @@ for i in range(1, 11):
     print(2, "X", i, "=", 2*i)
 
 
-x=list(range)
-print(x)
+# x=list(range)
+# print(x)
+
+print("***************************************************************************************************************")
+
+print("Print the sum of the numbers")
+sum=0
+
+for i in range(1, 11):
+    sum=sum+i
+
+print(sum)
+
+print("Print the characters present in the string")
+
+str="Hello World"
+
+for i in range(len(str)):
+    print(str[i],end="-")
+
+print("\n")
+
+for i in str:
+    print(i,end="-")
+
+print("Iterating over tuples")
+
+tup=(1, 2, 3, 4, 5)
+
+for i in tup:
+    print(i, end="-")
+
+#Tuples_unboxing
+#Common Data Structure in Python
+#Having Tuples inside a list
+my_list=[(1, 2), (3, 4), (5, 6)]
+print(len(my_list))
+
+for item in my_list:
+    print(item)
+
+
+for (a,b) in my_list:
+    print(a)
+    print(b)
+    print("*******************")
