@@ -53,3 +53,19 @@ print(result)
 
 
 
+
+#Another Example of If else statement
+age =30
+name = "John"
+
+if name == "John":
+    if age==30:
+        print("You are John and you are 30 years old")
+    else:
+        print("You are John but you are not 30 years old")
+
+else:
+    print("You are not John")
+
+
+
