@@ -5,6 +5,9 @@ print("*************************************************************************
 new_string="My Name is Promode"
 rev_string="";
 
+
+# print(new_string)
+
 for i in range(len(new_string)-1,-1,-1):
     rev_string+=new_string[i]
 
