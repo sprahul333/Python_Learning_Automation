@@ -91,3 +91,24 @@ for (a,b) in my_list:
     print(a)
     print(b)
     print("*******************")
+
+print("**************************************WHILE WITH ELSE CONCEPT********************************************************")
+
+a=10
+
+while(a<5):
+    print(f'Value of a is: {a}')
+    a=a+1
+else:
+    print("a is not less than 5")
+
+print("***************************************************************************************************************")
+
+#Pass the loop
+
+print("Pass the loop")
+
+for i in range(10):
+    pass
+
+print("End of the loop")

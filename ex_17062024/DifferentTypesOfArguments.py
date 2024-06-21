@@ -4,7 +4,7 @@ def print_args(*args):  # Similar To List
         print(f"- {arg}")
 
 
-print(9, "Hello", "Day", 92.24)
+print_args(9, "Hello", "Day", 92.24)
 
 
 # Difference b/w List and Tuple is that Tuples are immutable and Lists are mutable
@@ -33,12 +33,15 @@ print(sample)
 
 # print(sample)
 
-print(max(5,2,0,10,4,-400))
+print(max(5, 2, 0, 10, 4, -400))
 
-print("*********************************************************************************************************************")
+print(
+    "*********************************************************************************************************************")
 
-#If we use * args along with another arguments, then we need to use seperators while calling the arguments
+
+# If we use * args along with another arguments, then we need to use seperators while calling the arguments
 def make_pizza(*toppings, base):
-    print(toppings,base)
+    print(toppings, base)
 
-make_pizza("pepperoni","Panner","Olives", base="thin crust,Hand Tossed")
+
+make_pizza("pepperoni", "Panner", "Olives", base="thin crust,Hand Tossed")

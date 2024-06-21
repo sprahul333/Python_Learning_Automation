@@ -6,6 +6,7 @@
 # 4. View Item
 # 5. Exit
 
+#Duplicates are allowed
 #Values can be retrieved by location. It is a ordered sequence where it can be indexed or sliced.
 from inspect import currentframe, getframeinfo
 
@@ -113,3 +114,15 @@ print(sorted_characters)
 
 list2=[1]*10
 print(list2)
+
+print("******************************************************************************************")
+
+#Easy List Generation with the help of range
+list_range_generation=list(range(1,11,3))
+print(list_range_generation)
+
+if not list_range_generation: #Checking the list is empty or not
+    print("List is empty")
+
+else:
+    print("List is not empty")

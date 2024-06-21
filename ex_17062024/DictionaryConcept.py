@@ -43,3 +43,21 @@ print(d.values());
 #Prints the list of key value pairs
 #Each Key value pair is a tuple
 print(d.items())
+
+print("**************************************************************************************************************")
+
+# Unpacking a dictionary into another dictionary
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+merged_dict = {**dict1, **dict2}
+print(merged_dict)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+# In this example, `{**dict1, **dict2}` creates a new dictionary by unpacking the key-value pairs from `dict1` and `dict2`. If there are any duplicate keys, the last value for that key will be used in the resulting dictionary. [[3]](https://blog.finxter.com/python-double-asterisk/)
+#
+# Example with function calls:
+
+def my_function(a, b, c):
+    print(a, b, c)
+
+my_dict = {'a': 1, 'b': 2}
+my_function(**my_dict, c=3)  # Output: 1 2 3
