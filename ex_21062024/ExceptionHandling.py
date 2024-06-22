@@ -55,3 +55,35 @@ try:
 except TypeError:
     print("Error in the code")
 
+print("************************************************************************************************************************")
+
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print("Error in division")
+finally:
+    print("Division operation is completed")
+
+print("************************************************************************************************************************")
+
+def ask():
+    waiting = True
+    while waiting:
+        try:
+            number=int(input("Please enter the number: "))
+            print(number**2)
+        except ValueError:
+            print("Please enter the valid number")
+            continue
+        except:
+            print("Thank you for entering the number")
+            break
+        else:
+            waiting=False
+
+        finally:
+            print("Finally Block is executed")
+
+ask()
+print("************************************************************************************************************************")
+
