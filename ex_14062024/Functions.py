@@ -59,3 +59,48 @@ def allowed_to_enter_python_class(password):
 allowed_to_enter_python_class("123")
 allowed_to_enter_python_class(123)
 
+
+print("*********************************************************************************************")
+
+def say_hello(name="Harry"):
+    print(f"Hello {name}")
+
+say_hello()
+
+print("*********************************************************************************************")
+
+def product_numbers(a, b):
+    return a * b
+
+product=product_numbers(10,20)
+print(product)
+
+print(type(product))
+
+print("*********************************************************************************************")
+
+
+def even_check(number):
+    return number % 2 == 0
+
+print(even_check(20))
+print(even_check(21))
+
+print("*********************************************************************************************")
+
+#Checks for a list of numbers
+
+even_numbers=[]
+def check_even_list(num_list):
+    for number in num_list:
+        if number % 2 == 0:
+            even_numbers.append(number)
+            return True
+        else:
+            pass
+    return False
+
+print("For the list of numbers")
+print(check_even_list([1,3,5,7,9,11,13,15,17,19,20]))
+
+print(even_numbers)

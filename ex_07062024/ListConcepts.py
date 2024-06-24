@@ -126,3 +126,53 @@ if not list_range_generation: #Checking the list is empty or not
 
 else:
     print("List is not empty")
+
+print("******************************************************************************************")
+
+#Shuffling the values in a list
+
+from random import shuffle
+
+shuffle(list_range_generation)
+print(list_range_generation)
+
+
+def shuffle_list(my_list):
+    shuffle(my_list)
+    return my_list
+
+result=shuffle_list(list_range_generation)
+print(result)
+
+print("******************************************************************************************")
+
+my_list=[' ','O',' '] #Initial List
+
+def player_guess():
+    guess=''
+    while guess not in ['0','1','2']:
+        guess=input("Pick a number: 0, 1 or 2")
+    
+    return int(guess)
+
+my_index=player_guess()
+print(my_index)
+
+print("******************************************************************************************")
+
+
+def check_guess(my_list,guess):
+    if my_list[guess]=='O':
+        print("Correct!")
+    else:
+        print("Wrong Guess!")
+        print(my_list)
+
+#SHUFFLING THE LIST
+mixed_up_list=shuffle_list(my_list)
+
+#USER GUESS
+my_index=player_guess()
+
+#CHECK GUESS
+check_guess(mixed_up_list,my_index)
