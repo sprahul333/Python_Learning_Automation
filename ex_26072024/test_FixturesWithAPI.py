@@ -65,6 +65,7 @@ import requests  # pip install requests
 @allure.tag("Smoke")
 @allure.severity(allure.severity_level.NORMAL)
 def test_put_request_postive(create_booking,create_token):
+    print("Booking ID: "+str(create_booking))
     base_url = "https://restful-booker.herokuapp.com"
     base_path = "/booking/"+str(create_booking)
     PUT_URL = base_url+base_path

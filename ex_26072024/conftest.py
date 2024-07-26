@@ -49,9 +49,9 @@ def create_booking():
     }
     response = requests.post(url=URL, headers=headers, json=json_payload)
 
-    print(type(URL))
-    print(type(headers))
-    print(type(json_payload))
+    # print(type(URL))
+    # print(type(headers))
+    # print(type(json_payload))
 
     # Assertions
     assert response.status_code == 200
@@ -59,3 +59,12 @@ def create_booking():
     data = response.json()
     booking_id = data["bookingid"]
     return booking_id
+
+@pytest.fixture()
+def launch_chrome_browser():
+    print("Launching a Chrome browser")
+    return "Chrome"
+
+@pytest.fixture()
+def close_browser():
+    print("Close Browser")
